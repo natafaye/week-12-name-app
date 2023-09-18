@@ -1,0 +1,44 @@
+/*** Body ***/
+
+body {
+    background-color: #2d3047;
+}
+
+
+/*** Font Sizes ***/
+
+.fs-15rem { font-size: 15rem; }
+.fs-4rem {  font-size: 4rem; }
+.fs-2rem { font-size: 2rem; }
+
+
+/*** Animations ***/
+
+.animate {
+    transform-origin: bottom center; 
+    animation-duration: 0.8s;
+}
+
+.animate-wave {
+    animation-name: wave;
+}
+
+@keyframes wave {
+    0% { transform: rotate(-20deg); }
+    20% { transform: rotate(20deg); }
+    50% { transform: rotate(-20deg); }
+    80% { transform: rotate(20deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.animate-pulse {
+    animation-name: pulse;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1) }
+    20% { transform: scale(1.2) }
+    50% { transform: scale(1) }
+    80% { transform: scale(1.2) }
+    100% { transform: scale(1) }
+}
